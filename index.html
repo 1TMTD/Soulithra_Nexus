@@ -3,14 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Soulithra Nexus Game</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    #gameArea {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      border: 2px solid black;
+      margin-top: 20px;
+    }
+    #player {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background-color: red;
+      left: 50px;
+      top: 50px;
+    }
+    .coin {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: gold;
+      border-radius: 50%;
+    }
+  </style>
 </head>
 <body>
-  <h2 id="score">Score: 0</h2>
-  <button onclick="addPoint()">Add Point</button>
+<h2 id="score">Score: 0</h2>
+<h2 id="timer">Time: 30s</h2>
+<h2 id="level">Level: 1</h2>
 
-  <h1>Welcome to Soulithra Nexus</h1>
-  <button onclick="alert('You clicked!')">Click me</button>
+<button onclick="startGame()">Start Game</button>
+
+<div id="gameArea">
+  <div id="player"></div>
+</div>
+    <!-- Монети -->
+    <div class="coin" style="left: 100px; top: 100px;"></div>
+    <div class="coin" style="left: 200px; top: 150px;"></div>
+    <div class="coin" style="left: 300px; top: 250px;"></div>
+  </div>
 
   <script src="js/script.js"></script>
 </body>
