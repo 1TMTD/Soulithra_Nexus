@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Soulithra Nexus Game
 
 ## 🎮 Description
